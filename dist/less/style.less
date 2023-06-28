@@ -1,0 +1,72 @@
+@import "./../uikit/src/less/uikit.less";
+@import "import.less";
+
+@import "vars.less";
+
+@internal-accordion-open-image: "../../images/accordion-open.svg";
+@internal-accordion-close-image: "../../images/accordion-close.svg";
+@navbar-background: transparent;
+@white-fade: fade(white, 4%);
+
+.tm-font-base {
+  font-family: @global-font-family !important;
+}
+
+html body.uk-light {
+
+  .uk-text-default,
+  .uk-text-emphasis {
+    color: white !important;
+  }
+}
+
+.lines {
+  span {
+    display: block;
+    position: fixed;
+    width: 1px;
+    height: 100%;
+    background: @white-fade;
+    left: 25%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+
+    &+span {
+      left: 50%;
+
+      &+span {
+        left: 75%;
+      }
+    }
+  }
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+hr {
+  border-color: @white-fade !important;
+}
+
+.uk-svg {
+  fill: none !important
+}
+
+// Responseive 
+// ========================================================= 
+
+@media (max-width: @breakpoint-medium) {
+  .profile-image {
+    background: none;
+    border-radius: 0;
+
+    img {
+      width: 240px !important;
+      height: 240px !important;
+      background: @global-muted-background !important;
+    }
+  }
+}
