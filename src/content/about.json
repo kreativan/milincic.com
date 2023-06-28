@@ -1,0 +1,53 @@
+{
+  "name": "Ivan Milincic",
+  "email": "ivan@milincic.com",
+  "github": "https://github.com/kreativan",
+  "twitter": "https://twitter.com/kreativan_dev",
+  "linkedin": "https://www.linkedin.com/in/kreativan-dev/",
+  "personal": [
+    "Ivan Milincic",
+    "23.09.1982",
+    "Sofia, Bulgaria",
+    "ivan@milincic.com"
+  ],
+  "headline": "Hi Im Ivan Milincic, a Web Developer with over 10 years of experience, currently working as a Freelancer.",
+  "bio": "I'm Serbian living and working from Sofia, Bulgaria. I have a strong passion for web development and technology in general. Over the years, I have explored various aspects of the tech industry, but I have discovered my true calling in web development, which is a field I genuinely love and enjoy.",
+  "stack": [
+    {
+      "title": "CSS",
+      "subtitle": "I am highly proficient in CSS and effective use of CSS frameworks."
+    },
+    {
+      "title": "JavaScript",
+      "subtitle": "Vanilla JavaScript, and libraries like HTMX and alpine.js"
+    },
+    {
+      "title": "ProcessWire",
+      "subtitle": "My main platform for building custom websites and web apps"
+    },
+    {
+      "title": "WordPress",
+      "subtitle": "Can't avoid the WordPress ecosystem, so I utilize it based on client requests."
+    },
+    {
+      "title": "WooCommerce",
+      "subtitle": "My go-to e-commerce platform for building robust and customized e-commerce websites."
+    },
+    {
+      "title": "Static Site Generators",
+      "subtitle": "SSG with 11ty, Nuxt.js and Astro. For documentation sites, I often utilize VitePress."
+    },
+    {
+      "title": "UIkit",
+      "subtitle": "My favorite CSS framework. It resonate with my development style and allow me to create web interfaces efficiently."
+    },
+    {
+      "title": "Vue",
+      "subtitle": "I have experimented with Vue.js and have been exploring Nuxt.js. I am eager to deepen my understanding and further."
+    },
+    {
+      "title": "Beyond Coding",
+      "subtitle": "My experience on the web goes beyond witing the code. Hosting, DNS, GIT, Design & Graphics... "
+    }
+  ]
+}

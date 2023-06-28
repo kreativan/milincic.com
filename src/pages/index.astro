@@ -1,0 +1,109 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.vue";
+import Accordion from "../components/Accordion.vue";
+import List from "../components/List.vue";
+import CTA from "../components/Cta.vue";
+import TextGrid from "../components/TextGrid.vue";
+import Logos from "../components/Logos.vue";
+
+let email = "ivan@milincic.com";
+let headline =
+	"Hi Im Ivan Milincic, a Web Developer with over 10 years of experience, currently working as a Freelancer.";
+
+let bio =
+	"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio libero repellendus quidem veniam ducimus enim nemo mollitia tempora provident quos reiciendis magni accusamus vitae aut, sint nisi aspernatur, ad non.";
+
+// Content
+import about from "../content/about.json";
+import workData from "../content/work.json";
+import educationData from "../content/education.json";
+
+import * as experiance from "../content/experiance.md";
+---
+
+<Layout>
+	<Header
+		github={about.github}
+		linkedin={about.linkedin}
+		twitter={about.twitter}
+		email={email}
+	/>
+
+	<main class="uk-section uk-section-large">
+		<div class="uk-container">
+			<header id="headline">
+				<h1 class="uk-heading-small">{headline}</h1>
+			</header>
+
+			<hr class="uk-margin-large" />
+
+			<div id="bio" class="uk-margin-large">
+				<div class="uk-grid uk-grid-match uk-flex-middle" uk-grid>
+					<div class="uk-width-1-4@m">
+						<div
+							class="profile-image uk-background-muted uk-border-circle uk-overflow-hidden uk-text-center"
+						>
+							<img
+								class="uk-border-circle"
+								src="/images/ivan-milincic.png"
+								style="filter: grayscale(10%) drop-shadow(0px -10px 4px rgba(0, 0, 0, 0.1));opacity: 0.9;"
+							/>
+						</div>
+					</div>
+					<div class="uk-width-expand@m">
+						<div>
+							<h2>Biography</h2>
+							<p class="uk-text-justify">{about.bio}</p>
+						</div>
+					</div>
+					<div class="uk-width-medium@m">
+						<div class="uk-background-muted uk-padding">
+							<h3
+								class="uk-text-uppercase uk-text-bold uk-text-default tm-font-base"
+							>
+								Personal Info
+							</h3>
+							<List items={about.personal} />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<hr class="uk-margin-large" />
+
+			<section class="uk-margin-large">
+				<Fragment set:html={experiance.compiledContent()} />
+				<TextGrid items={about.stack} />
+			</section>
+
+			<!--
+			<section class="uk-margin-large">
+				<div class="uk-padding-large uk-background-muted">
+					<Logos />
+				</div>
+			</section>
+			-->
+
+			<hr class="uk-margin-large" />
+
+			<section class="uk-margin-large">
+				<h2 class="uk-margin-medium">Work Experience</h2>
+				<Accordion items={workData} open={true} />
+			</section>
+
+			<hr class="uk-margin-large" />
+
+			<section class="uk-margin-large">
+				<h2 class="uk-margin-medium">Education</h2>
+				<Accordion items={educationData} open={true} />
+			</section>
+
+			<hr class="uk-margin-large" />
+
+			<section>
+				<CTA email={about.email} />
+			</section>
+		</div>
+	</main>
+</Layout>
