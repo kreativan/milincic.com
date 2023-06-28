@@ -14,13 +14,6 @@ let description =
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 
-		<!-- uikit  -->
-		<script
-			defer
-			is:client
-			src="https://unpkg.com/htmx.org@1.9.2"
-			integrity="sha384-L6OqL9pRWyyFU3+/bjdSri+iIphTN/bvYyM37tICVyOJkWZLpP2vGn6VUEXgzg6h"
-			crossorigin="anonymous"></script>
 		<script is:client src="/uikit/dist/js/uikit-core.min.js"></script>
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,6 +24,19 @@ let description =
 		/>
 
 		<title>{title}</title>
+		<meta name="description" content={description} />
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://milincic.com/" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary" />
+		<meta property="twitter:url" content="https://milincic.com/" />
+		<meta property="twitter:title" content={title} />
+		<meta property="twitter:description" content={description} />
 	</head>
 
 	<body class="uk-light uk-position-relative">
