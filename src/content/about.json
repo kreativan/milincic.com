@@ -19,7 +19,7 @@
     },
     {
       "title": "JavaScript",
-      "subtitle": "Vanilla JavaScript, and libraries like HTMX and alpine.js"
+      "subtitle": "Vanilla JavaScript, Ajax, libraries like HTMX and alpine.js and consuming APIs"
     },
     {
       "title": "ProcessWire",
@@ -47,7 +47,7 @@
     },
     {
       "title": "Beyond Coding",
-      "subtitle": "My experience on the web goes beyond witing the code. Hosting, DNS, GIT, Design & Graphics... "
+      "subtitle": "My experience on the web goes beyond writing the code. Hosting, DNS, GIT, Design & Graphics and more... "
     }
   ]
 }
