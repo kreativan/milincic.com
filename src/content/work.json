@@ -1,22 +1,22 @@
 [
   {
     "title": "Freelance - Web Developer",
-    "subtitle": "Sofia, Bulgaria / Remote Full Time / 2021 -  Now",
+    "subtitle": "2021 -  Now",
     "description": "Building custom websites and web applications. Working mainly with ProcessWire, WordPress and WooCommerce for e-commerce functionality. Offering and  managing hosting, VPS, DNS, Personalized Email, Backup, Maintenance and Support and more... Working directly with clients and outsourcing projects."
   },
   {
-    "title": "HMD Agency - Web Developer",
-    "subtitle": "Netherlands / Remote Full Time / 2017-2021",
+    "title": "Web Developer",
+    "subtitle": "2017 - 2021",
     "description": "Working on projects mostly based on ProcessWire CMS. Design, Font and back-end programming, developing and integrating modules, working on directory and classifieds type of projects, import-export-sync data using csv,xml and json formats. Developing ProcessWire reusable site-profiles."
   },
   {
     "title": "Freelance - Web Developer",
-    "subtitle": "Belgrade, Serbia / Remote Full Time / 2015 -  2017",
+    "subtitle": "2015 -  2017",
     "description": "Website design and development services for end clients and outsourcing services. Was mostly doing front-end development HTML/CSS/JavaScript/PHP with popular open source CMS systems Joomla and OpenCart, utilizing UIkit CSS framework, Less Preprocessor and gulp toolkit."
   },
   {
-    "title": "MD Computers Plus - IT Engineer",
-    "subtitle": "Prokuplje, Serbia / Full Time / 2009 -  2015",
-    "description": "Computer service and technical support, hardware and software. During my work at the company developed and maintained store web shop and other company related websites. Managed to create relation and establish partnership with the major ISPs in Serbia."
+    "title": "IT Engineer",
+    "subtitle": "2009 -  2015",
+    "description": "Computer service and technical support, hardware and software. During my work at the company developed and maintained store web shop and other company related websites."
   }
 ]
